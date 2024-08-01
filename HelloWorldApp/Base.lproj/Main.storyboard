@@ -28,7 +28,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button">
                                     <fontDescription key="titleFontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="23"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="startPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lba-v5-gSk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -38,6 +42,10 @@
                             <constraint firstItem="4wx-Bt-XEu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yzD-OO-TiB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="27p-Ko-ymi" id="Gh8-VL-thk"/>
+                        <outlet property="startButton" destination="4wx-Bt-XEu" id="Crn-FI-gRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +53,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
