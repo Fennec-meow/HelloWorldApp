@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="27p-Ko-ymi">
-                                <rect key="frame" x="125" y="145" width="142" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-Bt-XEu">
                                 <rect key="frame" x="154" y="714" width="85" height="37"/>
                                 <state key="normal" title="Button"/>
@@ -34,11 +27,24 @@
                                     <action selector="startPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lba-v5-gSk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="27p-Ko-ymi">
+                                <rect key="frame" x="129" y="145" width="135" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="uAy-ZT-biz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4wx-Bt-XEu" secondAttribute="bottom" constant="67" id="fAv-s4-6H8"/>
+                            <constraint firstItem="27p-Ko-ymi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="E1j-hw-Kgz"/>
+                            <constraint firstItem="27p-Ko-ymi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qbh-CE-rcq"/>
+                            <constraint firstItem="27p-Ko-ymi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="aIl-Ck-LBZ"/>
+                            <constraint firstItem="4wx-Bt-XEu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-67" id="fAv-s4-6H8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="27p-Ko-ymi" secondAttribute="trailing" constant="126" id="um8-AU-jqr"/>
                             <constraint firstItem="4wx-Bt-XEu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yzD-OO-TiB"/>
                         </constraints>
                     </view>

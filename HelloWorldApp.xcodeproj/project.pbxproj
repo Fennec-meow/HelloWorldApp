@@ -45,6 +45,7 @@
 				CEEDF49B2C5A46CF006B58F1 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		CEEDF49B2C5A46CF006B58F1 /* Products */ = {
 			isa = PBXGroup;
